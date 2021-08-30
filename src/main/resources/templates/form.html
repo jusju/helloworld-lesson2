@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Form</title>
+</head>
+<body>
+	<h1>Message form</h1>
+
+	<form action="#" th:action="@{/hello}" th:object="${message}"
+method="post">
+
+		<p>
+			Content: <input type="text" th:field="*{content}" />
+		</p>
+		<p>
+			<input type="submit" value="Submit" />
+		</p>
+	</form>
+
+</body>
+</html>
